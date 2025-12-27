@@ -20,18 +20,38 @@ A comprehensive Claude Code skill for searching, browsing, and downloading podca
 
 ### Installation
 
-1. **Install as Claude Code Skill**:
+#### Method 1: Via Claude Code Plugin (Recommended)
+
+If you're using [Claude Code](https://code.claude.com/), you can install this skill as a plugin:
+
+1. **Add the plugin marketplace** (first time only):
+   ```
+   /plugin marketplace add BurnWang/apple-podcast-downloader
+   ```
+
+2. **Install the skill**:
+   ```
+   /plugin install podcast-downloader
+   ```
+
+3. **That's it!** The skill is now available in all your Claude Code sessions.
+
+> **Note**: Plugins can be toggled on/off as needed using Claude Code's plugin management. See the [Claude Code Plugin Documentation](https://code.claude.com/docs/en/plugin-marketplaces) for more details.
+
+#### Method 2: Manual Installation
+
+1. **Clone to your Claude skills directory**:
    ```bash
-   # Clone this repository to your Claude skills directory
+   # For global installation (available in all projects)
    cd ~/.claude/skills/
    git clone https://github.com/BurnWang/apple-podcast-downloader.git
 
-   # Or for project-specific installation
+   # For project-specific installation
    cd your-project/.claude/skills/
    git clone https://github.com/BurnWang/apple-podcast-downloader.git
    ```
 
-2. **That's it!** No additional dependencies required.
+2. **No additional dependencies required** - uses only Python 3 standard library.
 
 ### Basic Usage
 
@@ -90,10 +110,13 @@ Claude: Works seamlessly with Chinese characters!
 ```
 apple-podcast-downloader/
 ├── SKILL.md              # Claude skill definition
+├── CLAUDE.md             # Claude Code guidance
 ├── README.md             # This file
 ├── examples.md           # Usage examples
 ├── reference.md          # API documentation
 ├── LICENSE               # MIT License
+├── .claude-plugin/       # Plugin marketplace configuration
+│   └── marketplace.json  # Plugin metadata and distribution
 └── scripts/
     └── itunes_api.py     # Python helper script
 ```
@@ -151,12 +174,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 This skill is an excellent example for learning:
 - Claude Code skill development
+- Claude Code plugin distribution
 - REST API integration
 - File download with progress tracking
 - Unicode handling in Python
 - Error handling and user experience
 
-Perfect for tutorials and workshops on building Claude skills!
+Perfect for tutorials and workshops on building Claude skills and plugins!
 
 ---
 

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "apple-podcast-downloader",
+  "version": "1.0.0",
+  "description": "Apple Podcast Downloader - Search, browse, and download podcast episodes from Apple Podcasts",
+  "owner": {
+    "name": "BurnWang",
+    "email": "[email protected]"
+  },
+  "plugins": [
+    {
+      "name": "podcast-downloader",
+      "description": "Search and download podcast episodes from Apple Podcasts. Use when user wants to find podcasts, download podcast episodes, get podcast information, or mentions Apple Podcasts, iTunes, podcast search, or audio downloads.",
+      "version": "1.0.0",
+      "author": {
+        "name": "BurnWang",
+        "email": "[email protected]"
+      },
+      "source": ".",
+      "category": "productivity",
+      "tags": ["podcast", "audio", "download", "apple-podcasts", "itunes"],
+      "keywords": ["podcast", "audio", "download", "mp3", "itunes", "apple", "search"]
+    }
+  ]
+}
