@@ -16,7 +16,7 @@
         "name": "BurnWang",
         "email": "[email protected]"
       },
-      "source": ".",
+      "source": "./",
       "category": "productivity",
       "tags": ["podcast", "audio", "download", "apple-podcasts", "itunes"],
       "keywords": ["podcast", "audio", "download", "mp3", "itunes", "apple", "search"]
